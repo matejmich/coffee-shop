@@ -39,7 +39,7 @@ function Cart() {
             <div className="min-h-full flex flex-col py-6 bg-gray-50">
               <div className="px-4 sm:px-6 flex justify-between">
                 <h2 className="text-lg font-medium text-gray-900">Shopping Cart</h2>
-                <h2 className="text-right cursor-pointer hover:bg-gray-200 rounded p-1" onClick={handleCloseCart}>&times;</h2>
+                <h2 className="text-lg text-right cursor-pointer hover:bg-gray-200 rounded p-1" onClick={handleCloseCart}>&times;</h2>
               </div>
               <div className="mt-6 relative flex-1 px-4 sm:px-6">
                 <ul className="divide-y divide-gray-200">
@@ -71,7 +71,7 @@ function Cart() {
                   <p>${(Math.floor(cartItems.reduce((total, item) => total + item.price, 0) * 100) / 100)}</p>
                 </div>
                 <div className="mt-6">
-                  <button onClick={rickRoll} className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                  <button onClick={rickRoll} className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-custom-bg-color hover:bg-custom-bg-color-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
                     Checkout
                   </button>
                 </div>
