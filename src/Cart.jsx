@@ -31,7 +31,7 @@ function Cart() {
   }
 
   return (
-    <div className="fixed inset-0 overflow-hidden z-50">
+    <div className="fixed inset-0 overflow-hidden z-50 min-w-full">
       <div className="bg-black bg-opacity-50 absolute inset-0 transition-opacity" aria-hidden="true"></div>
       <section className="absolute inset-y-0 right-0 pl-10 max-w-full flex" style={{ transform: 'translateX(100%)', transition: 'transform 0.5s' }}>
         <div className="w-screen max-w-md">

@@ -9,7 +9,7 @@ import { CartProvider } from './CartContext';
 
 function App() {
 
-  const [cartOpen, setCartOpen] = useState(true);
+
   const [data, setData] = useState([])
 
 
@@ -30,7 +30,7 @@ function App() {
   }
   fetchData()
   }, [])
-console.log(data)
+
 
 
 
@@ -42,7 +42,7 @@ console.log(data)
           <Routes>
             <Route path="/" element={<CoffeePage data={data} />} />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/cart" element={<Cart isOpen={cartOpen} toggleKosik={() => setCartOpen(!cartOpen)} />} />
+
           </Routes>
         </div>
       </CartProvider>
